@@ -28,6 +28,7 @@ GENRE_ID_PODCAST = 26
 MAX_PODCAST_SEARCH_LIST = 200
 MAX_PODCAST_LIST = 300
 PODCAST_URL = 'http://itunes.apple.com/lookup?id=%(id)d'
+PODCAST_MIRROR_URL = 'https://pcr.apple.com/id%(id)d'
 GENRE_LIST_URL = ('http://itunes.apple.com/WebObjects/'
                   'MZStoreServices.woa/ws/genres?id=%(genre_id)d')
 PODCAST_LIST_URL = ('http://itunes.apple.com/%(country)s/rss/'
@@ -192,10 +193,8 @@ class ItunesPodcastApi():
                     return node
             raise NoEnclosureException
 
-        url = PODCAST_URL % {'id': int(podcast_id)}
-        data = self.__get_json(url)
-        podcast_url = data['results'][0]['feedUrl']
-        raw_content = self.__urlopen(podcast_url)
+        url = PODCAST_MIRROR_URL % {'id': int(podcast_id)}
+        raw_content = self.__urlopen(url)
         content = feedparser.parse(raw_content)
         fallback_thumb = content['feed'].get('image', {}).get('href')
         items = []
