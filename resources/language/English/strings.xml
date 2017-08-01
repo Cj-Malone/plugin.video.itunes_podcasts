@@ -7,15 +7,15 @@
     <!-- Root Menu -->
     <string id="30000">All genres</string>
     <string id="30002">Browse by genre</string>
-    <string id="30003">My Podcasts</string>
+    <string id="30003">Subscriptions</string>
     <string id="30004">Search</string>
     <string id="30005">Video Podcasts</string>
     <string id="30006">Audio Podcasts</string>
     <string id="30007">No Video/Music found!</string>
 
     <!-- Context Menu -->
-    <string id="30010">Add to "My Podcasts"</string>
-    <string id="30011">Remove from "My Podcasts"</string>
+    <string id="30010">Subscribe</string>
+    <string id="30011">Unsubscribe</string>
 
     <!-- Settings -->
     <string id="30100">Podcasts: Force ViewMode to Thumbnail</string>
