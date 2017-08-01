@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.itunes_podcasts" name="Apple Podcasts" version="1.1.6" provider-name="Tristan Fischer (sphere@dersphere.de)">
+<addon id="plugin.video.itunes_podcasts" name="Apple Podcasts" version="1.1.7" provider-name="Tristan Fischer (sphere@dersphere.de)">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.simplejson" version="2.0.10"/>
@@ -91,8 +91,9 @@
         <disclaimer lang="sv">INGEN iTunes krävs!</disclaimer>
         <disclaimer lang="tr">iTunes gerekli değil!</disclaimer>
         <disclaimer lang="zh">不需要iTunes软件！</disclaimer>
-        <news>1.1.6 (16.03.2014)
-            - updated translations</news>
+        <news>1.1.7 (2017-08-01)
+            - Rebrand to Apple podcasts
+            - Rename "My Podcasts" to Subscriptions</news>
         <assets>
             <icon>resources/media/icon.png</icon>
             <screenshot>resources/media/screenshot-root.png</screenshot>
